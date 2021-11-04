@@ -1,0 +1,52 @@
+[debug] [2021-10-09T11:57:36.011Z] ----------------------------------------------------------------------
+[debug] [2021-10-09T11:57:36.014Z] Command:       C:\Users\HP\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-10-09T11:57:36.015Z] CLI Version:   9.19.0
+[debug] [2021-10-09T11:57:36.015Z] Platform:      win32
+[debug] [2021-10-09T11:57:36.015Z] Node Version:  v14.18.0
+[debug] [2021-10-09T11:57:36.016Z] Time:          Sat Oct 09 2021 18:57:36 GMT+0700 (Western Indonesia Time)
+[debug] [2021-10-09T11:57:36.017Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-10-09T11:57:36.091Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-09T11:57:36.092Z] > authorizing via signed-in user (bintang.restu.bawono@mail.ugm.ac.id)
+[debug] [2021-10-09T11:57:36.092Z] [iam] checking project ockpu-teti-2021 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-10-09T11:57:36.094Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-10-09T11:57:36.095Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-09T11:57:36.308Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sat, 09 Oct 2021 11:57:36 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-09T11:57:36.332Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ockpu-teti-2021:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-10-09T11:57:37.404Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 09 Oct 2021 11:57:37 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=964","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-09T11:57:37.407Z] > refreshing access token with scopes: []
+[debug] [2021-10-09T11:57:37.407Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-09T11:57:37.566Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Sat, 09 Oct 2021 11:57:38 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-09T11:57:37.592Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ockpu-teti-2021 [none]
+[debug] [2021-10-09T11:57:38.061Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ockpu-teti-2021 200
+[debug] [2021-10-09T11:57:38.062Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ockpu-teti-2021 {"projectId":"ockpu-teti-2021","projectNumber":"76273983981","displayName":"OCKPU TETI 2021","name":"projects/ockpu-teti-2021","resources":{"hostingSite":"ockpu-teti-2021"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'ockpu-teti-2021'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-10-09T11:57:38.070Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-10-09T11:57:38.071Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-09T11:57:38.255Z] <<< HTTP RESPONSE 200 {"date":"Sat, 09 Oct 2021 11:57:38 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-09T11:57:38.277Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/ockpu-teti-2021/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-10-09T11:57:39.932Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 09 Oct 2021 11:57:40 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[ockpu-teti-2021]: beginning deploy... 
+[info] i  hosting[ockpu-teti-2021]: found 2 files in website code 
+[debug] [2021-10-09T11:57:39.958Z] > refreshing access token with scopes: []
+[debug] [2021-10-09T11:57:39.958Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-09T11:57:39.961Z] [hosting] hash cache [d2Vic2l0ZSBjb2Rl] stored for 2 files
+[debug] [2021-10-09T11:57:39.961Z] [hosting][hash queue][FINAL] {"max":6,"min":0,"avg":3,"active":0,"complete":2,"success":2,"errored":0,"retried":0,"total":2,"elapsed":10}
+[debug] [2021-10-09T11:57:40.169Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sat, 09 Oct 2021 11:57:40 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-09T11:57:40.189Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/ockpu-teti-2021/versions/763904979502902a:populateFiles [none]
+[debug] [2021-10-09T11:57:40.189Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/ockpu-teti-2021/versions/763904979502902a:populateFiles {"files":{"/index.html":"7052af0dcebf69907e0488cbcf35226aad48f5b4ba4676342003c925a7ddd810","/404.html":"daa499dd96d8229e73235345702ba32f0793f0c8e5c0d30e40e37a5872be57aa"}}
+[debug] [2021-10-09T11:57:41.628Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/sites/ockpu-teti-2021/versions/763904979502902a:populateFiles 200
+[debug] [2021-10-09T11:57:41.628Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/ockpu-teti-2021/versions/763904979502902a:populateFiles {"uploadRequiredHashes":["daa499dd96d8229e73235345702ba32f0793f0c8e5c0d30e40e37a5872be57aa"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/ockpu-teti-2021/versions/763904979502902a/files"}
+[debug] [2021-10-09T11:57:41.629Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/ockpu-teti-2021/versions/763904979502902a/files/daa499dd96d8229e73235345702ba32f0793f0c8e5c0d30e40e37a5872be57aa [none]
+[debug] [2021-10-09T11:57:41.629Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/ockpu-teti-2021/versions/763904979502902a/files/daa499dd96d8229e73235345702ba32f0793f0c8e5c0d30e40e37a5872be57aa [stream]
+[debug] [2021-10-09T11:57:41.632Z] [hosting][populate queue][FINAL] {"max":1671,"min":1671,"avg":1671,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1674}
+[debug] [2021-10-09T11:57:41.632Z] [hosting] uploads queued: 1
